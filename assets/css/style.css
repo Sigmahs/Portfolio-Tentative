@@ -1,0 +1,196 @@
+
+
+@font-face {
+    font-family: Hack, monospace;
+    src: url("/Fonts/Hack-Regular.ttf");
+  }
+
+  /* this is width stuff */
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 70em;
+}
+
+    @media screen and (max-width: 11680px) {
+
+        .container {
+            width: calc(50%);
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        .container {
+            width: calc(50% - 60px);
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        .container {
+            width: calc(100% - 80px);
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .container {
+            width: calc(100% - 40px);
+        }
+
+    }
+
+    .row {
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+	}
+
+    img.image.featured {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        margin-top: 5%;
+        border-radius: 12px;
+    }
+
+    #banner {
+        background: #CCE8F4 url("../images/pic01.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+        position: relative;
+        padding: 8em 0;
+        margin: 4em 0 0 0;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #banner header {
+        background-color: rgba(34, 30, 31, 0.58);
+        display: inline-block;
+        padding: 2.5em 5em;
+        border-radius: 5px;
+        font-family: Hack;
+    }
+
+        #banner header h2 {
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.5em;
+            margin: 0 0 0.65em 0;
+        }
+
+        #banner header p {
+            color: #bde2f7;
+            padding: 0;
+            font-family: Hack;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        #nav {
+            margin: 2.5em 0 0 0;
+            font-family: Hack;
+        }
+    
+            #nav > ul {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+    
+                #nav > ul > li {
+                    display: flex;
+                    justify-content: center;
+                    font-style: monospace;
+                    margin: 0 0.35em 0 0.35em;
+                }
+    
+                    #nav > ul > li > ul {
+                        display: none;
+                    }
+    
+                    #nav > ul > li > a {
+                        border-radius: 5px;
+                        color: #5d5d5d;
+                        text-decoration: none;
+                        padding: 0.6em 1.2em 0.6em 1.2em;
+                        -moz-transition: background-color .25s ease-in-out;
+                        -webkit-transition: background-color .25s ease-in-out;
+                        -ms-transition: background-color .25s ease-in-out;
+                        transition: background-color .25s ease-in-out;
+                        outline: 0;
+                    }
+    
+                    #nav > ul > li:hover > a, #nav > ul > li.active > a {
+                        background: #f3f3f3;
+                    }
+    
+                    #nav > ul > li.current > a {
+                        background: #1338EC;
+                        color: #fff !important;
+                        font-weight: 700;
+                    }
+    #intro {
+        text-align: center;
+        overflow: hidden;
+        font-family: sans-serif;
+    }
+
+        #intro section {
+            margin: 3em 0;
+            padding: 2.5em 0;
+        }
+
+        #intro h2 {
+            font-size: 1.75em;
+        }
+
+        #intro p {
+            margin: 0;
+        }
+    
+    
+    img.first-project[data-href] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* border-style: solid; */
+        cursor: pointer !important;
+        
+    }
+
+    .flexed {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img.project[data-href] {
+        width: 50%;
+        /* border-style: solid; */
+        box-sizing: border-box;
+        cursor: pointer !important;
+    }
+
+    .bottom-right {
+        display: inline-block;
+        font-family: Hack;
+    }
+        
+    .text-box {
+        position: absolute;    
+        height: 100%;
+        text-align: right;    
+        width: 100%;
+    }
+
