@@ -182,15 +182,4 @@
         cursor: pointer !important;
     }
 
-    .bottom-right {
-        display: inline-block;
-        font-family: Hack;
-    }
-        
-    .text-box {
-        position: absolute;    
-        height: 100%;
-        text-align: right;    
-        width: 100%;
-    }
 
